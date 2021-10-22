@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/excel">Excel</router-link> |
       <router-link to="/js">JS</router-link> |
+      <router-link to="/set">$set</router-link> |
     </div>
     <router-view/>
   </div>
