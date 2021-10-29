@@ -6,6 +6,7 @@
       <router-link to="/excel">Excel</router-link> |
       <router-link to="/js">JS</router-link> |
       <router-link to="/set">$set</router-link> |
+      <router-link to="/spinner">Spinner</router-link> |
     </div>
     <router-view/>
   </div>

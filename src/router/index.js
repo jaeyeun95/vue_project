@@ -38,6 +38,11 @@ const routes = [
     name: 'set',
     component: () => import(/* webpackChunkName: "about" */ '../views/Set.vue')
   },
+  {
+    path: '/spinner',
+    name: 'spinner',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Spinner.vue')
+  },
 ]
 
 const router = new VueRouter({
