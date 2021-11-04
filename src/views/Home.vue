@@ -15,36 +15,6 @@
       <button @click="change">change</button>
 
       <br><br>
-      <div>
-        <h1>checkBox</h1>
-        <table class="table" align="center">
-        <thead>
-          <tr>
-              <th scope="col">
-                  <input type="checkbox" v-model="allChecked" @click="checkedAll($event.target.checked)">
-              </th>
-              <th>번호</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(item) in testList" :key="item">
-              <td>
-                <input type="checkbox" v-model="checkList">
-              </td>
-              <td>
-                          <!-- :id="'check_' + item.boardId"
-                          :value="item.boardId" -->
-                          <!-- {{ testList }} -->
-                  <!-- <input type="checkbox"
-                          v-model="testList"
-                          @change="selected($event)"
-                  > -->
-                  {{ item }}
-              </td>
-          </tr>
-        </tbody>
-    </table>
-      </div>
 
 
   </div>
@@ -62,20 +32,9 @@ export default {
       test:false,
       test2:'1234',
       result:'',
-      testList:['1','2','3','4'],
-      allChecked:false,
-      checkList:false,
     }
   },
   methods:{
-    checkedAll(e){
-      console.log('all ', e);
-      if(e){
-        this.checkList = true;
-      }else {
-        this.checkList = false;
-      }
-    },
     change(){
       this.test = !this.test;
       // this.result = 'result입니다.'

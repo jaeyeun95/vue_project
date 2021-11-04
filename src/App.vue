@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
+      <router-link to="/checkbox">checkbox</router-link> |
       <router-link to="/excel">Excel</router-link> |
       <router-link to="/js">JS</router-link> |
       <router-link to="/set">$set</router-link> |
