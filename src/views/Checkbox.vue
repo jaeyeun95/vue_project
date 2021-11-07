@@ -58,12 +58,9 @@ export default {
       if(this.checkList.length == 0){
         alert('체크하신게 없습니다.')
       }else{
-        console.log('## ::', this.checkList)
-        console.log('testList ::', this.testList)
         for(let i =0; i < this.checkList.length ; i++){
           if(this.checkList[i]){
             alert(this.testList[i]+'번 선택하셨습니다.');
-            console.log('result ::', this.testList[i])
           }
         }
       }
