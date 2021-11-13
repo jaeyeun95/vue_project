@@ -7,6 +7,7 @@
       <router-link to="/js">JS</router-link> |
       <router-link to="/set">$set</router-link> |
       <router-link to="/spinner">Spinner</router-link> |
+      <router-link to="/axios">Axios</router-link> |
     </div>
     <router-view/>
   </div>

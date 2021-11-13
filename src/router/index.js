@@ -43,6 +43,11 @@ const routes = [
     name: 'spinner',
     component: () => import(/* webpackChunkName: "about" */ '../views/Spinner.vue')
   },
+  {
+    path: '/axios',
+    name: 'Axios',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Axios.vue')
+  },
 ]
 
 const router = new VueRouter({
