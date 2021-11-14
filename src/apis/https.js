@@ -1,3 +1,8 @@
-import axios from 'aixos'
+import axios from "axios";
 
-create
+const instance = axios.create({
+  //   baseURL: "http://localhost8888",
+  baseURL: "https://reqres.in",
+});
+
+export default instance;
