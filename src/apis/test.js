@@ -4,3 +4,7 @@ import instance from "./https";
 export async function getList() {
   return instance.get("/api/unknown");
 }
+
+export async function create(data){
+  return instance.post("/api/users", data);
+}
