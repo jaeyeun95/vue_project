@@ -8,6 +8,7 @@
       <router-link to="/set">$set</router-link> |
       <router-link to="/spinner">Spinner</router-link> |
       <router-link to="/axios">Axios</router-link> |
+      <router-link to="/error">Error</router-link> |
     </div>
     <router-view/>
   </div>

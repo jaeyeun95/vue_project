@@ -48,6 +48,11 @@ const routes = [
     name: 'Axios',
     component: () => import(/* webpackChunkName: "about" */ '../views/Axios.vue')
   },
+  {
+    path: '/error',
+    name: 'Error',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Error.vue')
+  },
 ]
 
 const router = new VueRouter({
