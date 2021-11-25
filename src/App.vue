@@ -9,6 +9,7 @@
       <router-link to="/spinner">Spinner</router-link> |
       <router-link to="/axios">Axios</router-link> |
       <router-link to="/error">Error</router-link> |
+      <router-link to="/audio">Audio</router-link> |
     </div>
     <router-view/>
   </div>

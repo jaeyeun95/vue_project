@@ -53,6 +53,11 @@ const routes = [
     name: 'Error',
     component: () => import(/* webpackChunkName: "about" */ '../views/Error.vue')
   },
+  {
+    path: '/audio',
+    name: 'Audio',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Audio.vue')
+  },
 ]
 
 const router = new VueRouter({
