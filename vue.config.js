@@ -1,4 +1,4 @@
-const path = require("path");
+// const path = require("path");
 
 // 통신을 위한 설정
 module.exports = {
