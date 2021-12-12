@@ -7,17 +7,17 @@
             <source type="audio/mp3" :src="require('../audio/test1.wav')"/>
         </audio>
 
-        <h3>오디오 테스트</h3>
+        <h3 @click="play()">오디오 테스트</h3>
 
-        <div @click="play()">
-            1234
-        </div>
         <br>
         <button @click="test()">whileTest</button>
         <h3>{{ number }}</h3>
+
+        <Test1 />
     </div>
 </template>
 <script>
+import Test1 from '@/views/Test';
 export default {
     data() {
         return {
@@ -25,46 +25,14 @@ export default {
             number:0,
         }
     },
-    created(){
-        // this.getAudio();
-        // this.test();
-    },
     methods: {
-        // getAudio(){
-        //     console.log('오디오 가져오기')
-        //     // this.$axios.post('/test/audio/download')
-        //     // this.$axios.post('http://localhost:9000/audio/download')
-        //     axios.post('/api/audio/download')
-        //     .then(res => console.log(res))
-        //     .catch(err => console.log(err))
-        // },
-        // test(){
-        //     console.log('test 실행')
-        //     this.$axios.get('/api/board/list')
-        //     // this.$axios.get('http://localhost:9000/api/board/list')
-        //     .then(res => console.log(res))
-        //     .catch(err => console.log('에러',err))
-        // },
         play(){
             console.log('오디오 플레이' );
             
             // node require
             const audio = new Audio(require('@/audio/test1.wav'));
             audio.play();
-
-            console.log('dfasdf', audio.ended)
-            if(audio.ended == false){
-                console.log('audioended', audio.ended)
-                alert('재생중.')
-            }
-
         },
-        // ttsPlay(base64){
-        //     var audio = new Audio("data:audio/wav;base64," + base64);
-        //     audio.controls = true;
-        //     document.body.appendChild(audio);
-        //     audio.play();
-        // },
         test(){
             let val = 0;
             let i = 0;
@@ -78,6 +46,9 @@ export default {
             this.number = val;
         },
     },
+    components:{
+        Test1,
+    }
 }
 </script>
 <style>

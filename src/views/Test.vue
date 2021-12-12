@@ -11,5 +11,11 @@ export default {
             
         }
     },
+    computed:{
+        speed(){
+            let num = [];
+            return num;
+        }
+    }
 }
 </script>
